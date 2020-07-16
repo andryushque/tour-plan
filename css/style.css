@@ -374,6 +374,10 @@ template {
   padding-bottom: 40px;
 }
 
+.navbar .logo {
+  width: 177px;
+}
+
 .navbar__search {
   margin-right: auto;
   margin-left: 108px;
