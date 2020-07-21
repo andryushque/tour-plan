@@ -812,7 +812,9 @@ template {
 .map {
   width: 350px;
   height: 213px;
-  background-color: #0A223D;
+}
+
+.map__card {
   border-radius: 10px;
 }
 
