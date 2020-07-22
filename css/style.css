@@ -1021,6 +1021,7 @@ template {
 }
 
 .reviews-slider__item {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1036,6 +1037,26 @@ template {
   padding: 0 100px 30px;
   background-color: #FFFFFF;
   border-radius: 8px;
+}
+
+.reviews-slider__item::before, .reviews-slider__item::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 48px;
+  background-repeat: no-repeat;
+}
+
+.reviews-slider__item::before {
+  top: 13px;
+  left: 62px;
+  background-image: url(../images/quote-left.svg);
+}
+
+.reviews-slider__item::after {
+  top: 118px;
+  right: 62px;
+  background-image: url(../images/quote-right.svg);
 }
 
 .reviews-slider__profile {
