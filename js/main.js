@@ -27,3 +27,9 @@ var reviewsSwiper = new Swiper(".reviews-slider", {
     enabled: true,
   },
 });
+
+/*=== Parallax ===*/
+$("parallax-window").parallax({
+  speed: 0.2,
+  bleed: 10,
+});
