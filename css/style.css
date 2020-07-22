@@ -724,7 +724,7 @@ template {
   line-height: 18px;
 }
 
-.rating__counter--sm {
+.rating__counter-small {
   margin-left: -2px;
   font-size: 10px;
   line-height: 13px;
@@ -994,6 +994,7 @@ template {
   right: 0;
   height: 100%;
   min-width: 65px;
+  max-width: 100px;
   border: none;
   background-color: #EC1F46;
   cursor: pointer;
