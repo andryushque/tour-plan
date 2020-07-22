@@ -1,11 +1,26 @@
-/*=== Swiper Slider ===*/
-var mySwiper = new Swiper(".swiper-container", {
+/*=== Hotel Slider ===*/
+var hotelSwiper = new Swiper(".hotel-slider", {
   loop: true,
   speed: 500,
 
   navigation: {
-    nextEl: ".slider-button--next",
-    prevEl: ".slider-button--prev",
+    nextEl: ".hotel-slider__button--next",
+    prevEl: ".hotel-slider__button--prev",
+  },
+
+  keyboard: {
+    enabled: true,
+  },
+});
+
+/*=== Reviews Slider ===*/
+var reviewsSwiper = new Swiper(".reviews-slider", {
+  loop: true,
+  speed: 500,
+
+  navigation: {
+    nextEl: ".reviews-slider__button--next",
+    prevEl: ".reviews-slider__button--prev",
   },
 
   keyboard: {
