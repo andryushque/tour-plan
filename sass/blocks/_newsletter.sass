@@ -21,21 +21,25 @@
     display: flex
     justify-content: space-between
     align-items: center
+    flex-wrap: wrap
     max-width: 731px
     margin: auto
   &-title
     display: flex
     flex-direction: column
+    flex-wrap: wrap
     margin: 0
     color: $light
     font-weight: 300
     font-size: 24px
     line-height: 30px
+    word-break: break-word
     &__strong
       text-transform: uppercase
       font-weight: 600
       font-size: 36px
       line-height: 45px
+      word-break: break-word
 
 .subscribe
   position: relative
@@ -69,3 +73,4 @@
     font-size: 12px
     line-height: 15px
     color: $light
+    word-break: break-word
