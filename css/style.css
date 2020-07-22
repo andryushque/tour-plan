@@ -911,8 +911,6 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   max-width: 731px;
   margin: auto;
 }
@@ -927,6 +925,7 @@ template {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  max-width: 50%;
   margin: 0;
   color: #FFFFFF;
   font-weight: 300;
@@ -946,6 +945,7 @@ template {
 .subscribe {
   position: relative;
   width: 350px;
+  max-width: 50%;
   height: 55px;
   border-radius: 4px;
   overflow: hidden;
@@ -990,6 +990,7 @@ template {
   min-width: 65px;
   max-width: 100px;
   border: none;
+  outline: none;
   background-color: #EC1F46;
   cursor: pointer;
   font-weight: bold;
@@ -1325,6 +1326,10 @@ template {
   }
   .newsletter__title {
     margin-bottom: 37px;
+    max-width: 100%;
+  }
+  .subscribe {
+    max-width: 100%;
   }
   .reviews__title {
     font-size: 26px;
