@@ -890,16 +890,6 @@ template {
   padding-bottom: 87px;
 }
 
-.newsletter::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(10, 34, 61, 0.8);
-}
-
 .newsletter-wrapper {
   position: relative;
   display: -webkit-box;
@@ -1003,6 +993,17 @@ template {
 .parallax-window {
   min-height: 260px;
   background: transparent;
+}
+
+.parallax-mirror::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: rgba(10, 34, 61, 0.8);
 }
 
 .reviews {
