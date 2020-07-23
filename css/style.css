@@ -1008,6 +1008,7 @@ template {
 .reviews {
   padding-top: 40px;
   padding-bottom: 70px;
+  height: auto;
 }
 
 .reviews__title {
@@ -1149,6 +1150,99 @@ template {
 .reviews-slider__button--next {
   right: 18px;
   background-image: url(../images/arrow-next-2.svg);
+}
+
+.activities {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.activities__title {
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  word-break: break-word;
+}
+
+.activities-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 255px;
+  height: 255px;
+  padding: 25px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.card__image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+  height: 100%;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+}
+
+.card__title {
+  margin-top: auto;
+  margin-bottom: 18px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  word-break: break-word;
+}
+
+.card__button {
+  padding: 7px 22px;
+  max-width: 100%;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  background-color: #EC1F46;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+  word-break: break-word;
 }
 
 @media (max-width: 1200px) {
