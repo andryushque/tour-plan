@@ -17,6 +17,7 @@ var hotelSwiper = new Swiper(".hotel-slider", {
 var reviewsSwiper = new Swiper(".reviews-slider", {
   loop: true,
   speed: 500,
+  autoHeight: true,
 
   navigation: {
     nextEl: ".reviews-slider__button--next",
