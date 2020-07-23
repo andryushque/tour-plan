@@ -19,6 +19,7 @@ img {
   height: auto;
 }
 
+/**=== Mixins ===**/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -459,8 +460,11 @@ template {
   min-width: 65px;
   height: 100%;
   border: none;
+  outline: none;
   background-color: #EC1F46;
   cursor: pointer;
+  color: #FFFFFF;
+  word-break: break-word;
 }
 
 .user {
@@ -865,15 +869,15 @@ template {
 .booking__button {
   width: 100%;
   min-height: 45px;
-  border: none;
   border-radius: 4px;
-  outline: none;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
-  color: inherit;
+  border: none;
+  outline: none;
   background-color: #EC1F46;
   cursor: pointer;
+  color: #FFFFFF;
   word-break: break-word;
 }
 
@@ -979,13 +983,13 @@ template {
   height: 100%;
   min-width: 65px;
   max-width: 100px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
   border: none;
   outline: none;
   background-color: #EC1F46;
   cursor: pointer;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
   color: #FFFFFF;
   word-break: break-word;
 }
@@ -1232,15 +1236,15 @@ template {
 .card__button {
   padding: 7px 22px;
   max-width: 100%;
-  border: none;
   border-radius: 4px;
-  outline: none;
-  background-color: #EC1F46;
-  cursor: pointer;
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
+  border: none;
+  outline: none;
+  background-color: #EC1F46;
+  cursor: pointer;
   color: #FFFFFF;
   word-break: break-word;
 }
