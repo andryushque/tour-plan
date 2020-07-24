@@ -9,6 +9,7 @@
     font-size: 36px
     line-height: 45px
     text-transform: uppercase
+    word-break: break-word
   &-wrapper
     display: grid
     grid-gap: 30px 30px
@@ -45,12 +46,12 @@
       object-fit: cover
     &__offer
       position: absolute
-      top: 30px
+      top: 26px
       left: 0
 
       display: block
       max-width: 100%
-      max-height: 20px
+      height: auto
       padding: 4px 9px
 
       font-weight: 600
@@ -59,9 +60,9 @@
       color: $light
       background-color: $primary
       border-radius: 0px 4px 4px 0px
+      word-break: break-word
       &--wide
-        max-height: 30px
-        padding: 7px 12px
+        padding: 8px 21px 8px 11px
         font-size: 12px
         line-height: 15px
 
@@ -85,14 +86,16 @@
       font-weight: bold
       font-size: 18px
       line-height: 23px
+      word-break: break-word
       &--wide
         margin-bottom: 27px
     &__text
       margin-top: 0
-      margin-bottom: 34px
+      margin-bottom: 45px
       font-weight: normal
       font-size: 14px
       line-height: 22px
+      word-break: break-word
   &-stars
     display: flex
     align-items: center
@@ -108,6 +111,7 @@
       font-weight: normal
       font-size: 12px
       line-height: 15px
+      word-break: break-word
       &:last-child
         margin-bottom: 0
     &__icon
@@ -118,20 +122,21 @@
     justify-content: space-between
     align-items: flex-end
     &__button
-      padding: 7px 22px
-      max-width: 100%
+      padding: 11px 27px
+      max-width: 50%
       border-radius: 4px
       font-family: 'Nunito', sans-serif
       font-weight: 600
-      font-size: 12px
-      line-height: 16px
+      font-size: 14px
+      line-height: 19px
       @include button-primary ()
   &-prices
     display: flex
     flex-direction: column
     &__price
+      margin-bottom: 5px
+      word-break: break-word
       &--old
-        margin-bottom: 5px
         font-weight: normal
         font-size: 14px
         line-height: 18px

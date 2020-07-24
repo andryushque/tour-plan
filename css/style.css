@@ -901,6 +901,7 @@ template {
   font-size: 36px;
   line-height: 45px;
   text-transform: uppercase;
+  word-break: break-word;
 }
 
 .packages-wrapper {
@@ -966,11 +967,11 @@ template {
 
 .packages-image__offer {
   position: absolute;
-  top: 30px;
+  top: 26px;
   left: 0;
   display: block;
   max-width: 100%;
-  max-height: 20px;
+  height: auto;
   padding: 4px 9px;
   font-weight: 600;
   font-size: 8px;
@@ -978,11 +979,11 @@ template {
   color: #FFFFFF;
   background-color: #EC1F46;
   border-radius: 0px 4px 4px 0px;
+  word-break: break-word;
 }
 
 .packages-image__offer--wide {
-  max-height: 30px;
-  padding: 7px 12px;
+  padding: 8px 21px 8px 11px;
   font-size: 12px;
   line-height: 15px;
 }
@@ -1020,6 +1021,7 @@ template {
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
+  word-break: break-word;
 }
 
 .packages-info__title--wide {
@@ -1028,10 +1030,11 @@ template {
 
 .packages-info__text {
   margin-top: 0;
-  margin-bottom: 34px;
+  margin-bottom: 45px;
   font-weight: normal;
   font-size: 14px;
   line-height: 22px;
+  word-break: break-word;
 }
 
 .packages-stars {
@@ -1060,6 +1063,7 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+  word-break: break-word;
 }
 
 .packages-booking__text:last-child {
@@ -1083,13 +1087,13 @@ template {
 }
 
 .packages-book__button {
-  padding: 7px 22px;
-  max-width: 100%;
+  padding: 11px 27px;
+  max-width: 50%;
   border-radius: 4px;
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 19px;
   border: none;
   outline: none;
   background-color: #EC1F46;
@@ -1108,8 +1112,12 @@ template {
           flex-direction: column;
 }
 
-.packages-prices__price--old {
+.packages-prices__price {
   margin-bottom: 5px;
+  word-break: break-word;
+}
+
+.packages-prices__price--old {
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
