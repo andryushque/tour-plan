@@ -888,6 +888,88 @@ template {
   overflow: hidden;
 }
 
+.packages {
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+
+.packages-wrapper {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px 30px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.packages-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.packages__card--wide {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.packages__card--wide .packages-image {
+  width: 50%;
+  height: 100%;
+}
+
+.packages__card--wide .packages-info {
+  width: 50%;
+  height: 100%;
+  padding: 46px 21px 30px 44px;
+}
+
+.packages-image {
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+
+.packages-image__wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.packages-image__photo {
+  display: block;
+  width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.packages-image__offer {
+  position: absolute;
+  width: auto;
+  max-width: 100%;
+  top: 30px;
+  left: 0;
+}
+
+.packages-info {
+  width: 100%;
+  height: 50%;
+  padding: 30px 21px 25px 32px;
+  background-color: #0A223D;
+  color: #FFFFFF;
+}
+
 .newsletter {
   position: relative;
   padding-top: 98px;
