@@ -1093,7 +1093,8 @@ template {
 .packages-book__button {
   display: block;
   padding: 11px 27px;
-  max-width: 50%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   border-radius: 4px;
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
@@ -1115,6 +1116,8 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .packages-prices__price {
@@ -1729,13 +1732,16 @@ template {
     height: 100%;
   }
   .packages-info__text {
-    margin-bottom: 20px;
+    display: none;
   }
   .packages-info__title {
     margin-bottom: 20px;
   }
   .packages-info__book {
     margin-top: 20px;
+  }
+  .packages-info__stars {
+    display: none;
   }
   .stars {
     -ms-flex-preferred-size: auto;
