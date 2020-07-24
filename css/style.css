@@ -910,9 +910,12 @@ template {
   grid-gap: 30px 30px;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(500px, -webkit-max-content);
+  grid-auto-rows: minmax(500px, max-content);
 }
 
 .packages-card {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -920,7 +923,6 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 500px;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -937,19 +939,20 @@ template {
 
 .packages__card--wide .packages-image {
   width: 50%;
-  height: 100%;
+  max-height: 100%;
+  height: 500px;
 }
 
 .packages__card--wide .packages-info {
   width: 50%;
-  height: 100%;
+  min-height: 500px;
   padding: 46px 21px 30px 44px;
 }
 
 .packages-image {
-  position: relative;
   width: 100%;
-  height: 50%;
+  max-height: 50%;
+  height: 250px;
 }
 
 .packages-image__wrapper {
@@ -1084,9 +1087,11 @@ template {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  width: 100%;
 }
 
 .packages-book__button {
+  display: block;
   padding: 11px 27px;
   max-width: 50%;
   border-radius: 4px;
@@ -1548,6 +1553,10 @@ template {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .packages-wrapper {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
   .booking {
     width: 340px;
   }
@@ -1666,6 +1675,68 @@ template {
   .hotel-slider {
     height: 350px;
   }
+  .packages {
+    padding-bottom: 60px;
+  }
+  .packages-wrapper {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .packages__card--wide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .packages__card--wide .packages-image {
+    width: 100%;
+    max-height: 250px;
+  }
+  .packages__card--wide .packages-info {
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+  }
+  .packages-title {
+    margin-bottom: 50px;
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .packages-book {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .packages-book__button {
+    max-width: 100%;
+    width: 100%;
+  }
+  .packages-prices {
+    margin-bottom: 15px;
+  }
+  .packages-info {
+    padding: 30px;
+    height: 100%;
+  }
+  .packages-info__text {
+    margin-bottom: 20px;
+  }
+  .packages-info__title {
+    margin-bottom: 20px;
+  }
+  .packages-info__book {
+    margin-top: 20px;
+  }
   .stars {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
@@ -1733,6 +1804,11 @@ template {
   }
   .hotel__slider {
     margin-bottom: 20px;
+  }
+  .packages-title {
+    margin-bottom: 42px;
+    font-size: 18px;
+    line-height: 23px;
   }
   .newsletter {
     padding-top: 76px;
