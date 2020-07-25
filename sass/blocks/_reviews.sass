@@ -74,19 +74,8 @@
       line-height: 19px
       text-align: justify
     &__button
-      position: absolute
       top: 133px
-      transform: translateY(-50%)
-      z-index: 100
-      width: 30px
-      height: 30px
-      border: none
-      outline: none
-      cursor: pointer
-      background-repeat: no-repeat
-      background-position: center
-      background-color: transparent
-      background-size: 10px
+      @include button-slider ()
       &--prev
         left: 18px
         background-image: url(../images/arrow-prev-2.svg)

@@ -42,19 +42,8 @@
     width: 728px
     height: 450px
     &__button
-      position: absolute
       top: 50%
-      transform: translateY(-50%)
-      z-index: 100
-      width: 30px
-      height: 30px
-      border: none
-      outline: none
-      cursor: pointer
-      background-repeat: no-repeat
-      background-position: center
-      background-color: transparent
-      background-size: 10px
+      @include button-slider ()
       &--prev
         left: 18px
         background-image: url(../images/arrow-prev-1.svg)
