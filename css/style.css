@@ -1069,6 +1069,10 @@ template {
   margin-right: 2px;
 }
 
+.packages-booking {
+  margin-bottom: 10px;
+}
+
 .packages-booking__text {
   display: -webkit-box;
   display: -ms-flexbox;
