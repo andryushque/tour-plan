@@ -1517,6 +1517,13 @@ template {
   word-break: break-word;
 }
 
+.footer {
+  padding-top: 108px;
+  padding-bottom: 46px;
+  background-color: #0A223D;
+  color: #FFFFFF;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
