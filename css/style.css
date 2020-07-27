@@ -1639,8 +1639,6 @@ template {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   font-weight: normal;
   font-size: 14px;
   line-height: 22px;
@@ -1908,6 +1906,9 @@ template {
     width: 48.5%;
     height: 255px;
   }
+  .footer {
+    padding-bottom: 33px;
+  }
   .footer-wrapper {
     -ms-grid-columns: (1fr)[6];
         grid-template-columns: repeat(6, 1fr);
@@ -1964,6 +1965,9 @@ template {
   }
   .footer-bottom__payments-info {
     grid-column: span 2;
+  }
+  .footer__bottom {
+    margin-top: 56px;
   }
 }
 
