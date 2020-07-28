@@ -137,6 +137,18 @@
       display: none
     &-bottom
       display: none
+      &--visible
+        display: block
+        position: fixed
+        top: 78px
+        left: 0
+        right: 0
+        bottom: 0
+    &-menu
+      flex-direction: column
+      &__item
+        margin-right: 0
+        margin-bottom: 20px
   .menu
     &-button
       display: flex
@@ -270,12 +282,17 @@
       margin-top: 30px
 
 @media (max-width: 576px)
+  body
+    padding-top: 74px
   .logo
     width: 99px
   .navbar
     &-top
       padding-top: 28px
       padding-bottom: 28px
+    &-bottom
+      &--visible
+        top: 74px
   .hotel
     &-grid
     &-slider

@@ -28,3 +28,11 @@ var reviewsSwiper = new Swiper(".reviews-slider", {
     enabled: true,
   },
 });
+
+/*=== Mobile Menu ===*/
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+  document
+    .querySelector(".navbar-bottom")
+    .classList.toggle("navbar-bottom--visible");
+});
