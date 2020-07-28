@@ -134,21 +134,52 @@
         right: 0
         z-index: 99
     &__search, &__user
-      display: none
+      &--mobile
+        &--hidden
+          display: none
+        &--visible
+          display: flex
+    &__user
+      flex-direction: column
+      justify-content: center
+    &__search
+      &--mobile
+        &--visible
+          width: 245px
     &-bottom
       display: none
+      position: fixed
+      top: 78px
+      left: 0
+      right: 0
+      padding-top: 30px
+      padding-bottom: 68px
       &--visible
         display: block
-        position: fixed
-        top: 78px
-        left: 0
-        right: 0
-        bottom: 0
     &-menu
       flex-direction: column
       &__item
         margin-right: 0
         margin-bottom: 20px
+        &:last-child
+          margin-bottom: 0
+        &--mobile
+          &--visible
+            display: block
+      &--mobile
+        margin: 0
+        padding: 0
+  .user
+    &__avatar
+      margin-left: 0
+      margin-bottom: 10px
+    &__name
+      &--light
+        margin-left: 0
+        color: $light
+  .search
+    &__input
+      width: 100%
   .menu
     &-button
       display: flex
