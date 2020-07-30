@@ -8,15 +8,27 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
+$email = $_POST['email'];
+$form = $_POST['form'];
 
 // Формирование самого письма
-$title = "Новое обращение Best Tour Plan";
-$body = "
-<h2>Новое письмо</h2>
-<b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
-";
+if ($form == 'message-form') {
+  $title = "Новое обращение Best Tour Plan";
+  $body = "
+  <h2>Новое письмо</h2>
+  <b>Имя:</b> $name<br>
+  <b>Телефон:</b> $phone<br><br>
+  <b>Сообщение:</b><br>$message
+  ";
+};
+
+if ($form == 'message-subscribe') {
+  $title = "Новая подписка Best Tour Plan";
+  $body = "
+  <h2>Новая подписка на рассылку</h2>
+  <b>email:</b> $email<br>
+  ";
+};
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -53,5 +65,12 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header('Location: message.html');
+if ($form == 'message-form') {
+  header('Location: message-form.html');
+};
+
+if ($form == 'message-subscribe') {
+  header('Location: message-subscribe.html');
+};
+
 // echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);

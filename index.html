@@ -622,13 +622,23 @@
             Newsletter
           </span>
         </h2>
-        <form action="#" class="subscribe newsletter__subscribe">
+        <form
+          action="send.php"
+          method="POST"
+          class="subscribe newsletter__subscribe"
+        >
           <input
             type="email"
             class="subscribe__input"
             placeholder="Your email address"
+            name="email"
           />
-          <button class="subscribe__button">
+          <button
+            class="subscribe__button"
+            type="submit"
+            name="form"
+            value="message-subscribe"
+          >
             Send
           </button>
         </form>
@@ -1205,7 +1215,14 @@
                 name="message"
               ></textarea>
               <div class="footer-form__bottom">
-                <button class="button footer__button">Send</button>
+                <button
+                  class="button footer__button"
+                  type="submit"
+                  name="form"
+                  value="message-form"
+                >
+                  Send
+                </button>
                 <span class="footer__info">* Required Fields</span>
               </div>
             </form>
