@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -17,6 +18,17 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/*=== Сообщение при отправке формы ===*/
+.message {
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.message__link {
+  text-decoration: none;
+  color: #0A223D;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
