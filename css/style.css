@@ -1828,6 +1828,15 @@ template {
   left: 0;
   z-index: 100;
   background: rgba(0, 143, 223, 0.39);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__dialog {
@@ -1842,6 +1851,15 @@ template {
   border-radius: 8px;
   background-color: #0A223D;
   color: #FFFFFF;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__close {
