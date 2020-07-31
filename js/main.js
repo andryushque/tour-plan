@@ -31,11 +31,9 @@ $(document).ready(function () {
   });
 
   /*=== Mobile Menu ===*/
-  var menuButton = document.querySelector(".menu-button");
-  menuButton.addEventListener("click", function () {
-    document
-      .querySelector(".navbar-bottom")
-      .classList.toggle("navbar-bottom--visible");
+  var menuButton = $(".menu-button");
+  menuButton.on("click", function () {
+    $(".navbar-bottom").toggleClass("navbar-bottom--visible");
   });
 
   /*=== Modal Form ===*/
