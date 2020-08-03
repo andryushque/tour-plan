@@ -62,4 +62,25 @@ $(document).ready(function () {
     modalDialog.removeClass("modal__dialog--visible");
     $("body").removeClass("modal-open");
   }
+
+  /*=== Validation ===*/
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "At least 2 characters long",
+        },
+        email: {
+          required: "Please specify your email",
+          email: "Format: name@domain.com",
+        },
+        phone: {
+          required: "Please specify your phone number",
+          phone: "Format: +7-(999)-999-99-99",
+        },
+      },
+    });
+  });
 });
