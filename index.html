@@ -31,7 +31,7 @@
             class="search navbar__search navbar__search--mobile--hidden"
           >
             <input
-              type="text"
+              type="search"
               class="search__input"
               placeholder="Search Location"
             />
@@ -1210,6 +1210,7 @@
                   class="input footer__input"
                   placeholder="Your Full Name*"
                   name="name"
+                  minlength="2"
                   required
                 />
               </div>
@@ -1219,6 +1220,8 @@
                   class="input footer__input phone_with_ddd"
                   placeholder="Phone Number*"
                   name="phone"
+                  minlength="17"
+                  maxlength="19"
                   required
                 />
               </div>
@@ -1291,6 +1294,8 @@
             class="input modal__input phone_with_ddd"
             placeholder="Phone Number*"
             name="phone"
+            minlength="17"
+            maxlength="19"
             required
           />
           <input
@@ -1342,6 +1347,7 @@
             class="input modal__input"
             placeholder="Your Full Name*"
             name="name"
+            minlength="2"
             required
           />
           <input
@@ -1349,6 +1355,8 @@
             class="input modal__input phone_with_ddd"
             placeholder="Phone Number*"
             name="phone"
+            minlength="17"
+            maxlength="19"
             required
           />
           <input

@@ -70,22 +70,21 @@ $(document).ready(function () {
       messages: {
         name: {
           required: "Please specify your name",
-          minlength: "At least 2 characters long",
+          minlength: "Please enter at least 2 characters.",
         },
         email: {
           required: "Please specify your email",
-          email: "Format: name@domain.com",
+          email: "Email address format: name@domain.com",
         },
         phone: {
           required: "Please specify your phone number",
-          phone: "Format: +7-(999)-999-99-99",
+          phone: "Phone number format: +7-(999)-999-99-99",
+          minlength: "Please enter at least 11 characters.",
         },
       },
     });
   });
 
   /*=== Phone Number Mask ===*/
-  $(document).ready(function () {
-    $(".phone_with_ddd").mask("+0(000) 000-00-00");
-  });
+  $(".phone_with_ddd").mask("+7(000) 000-00-0000");
 });
