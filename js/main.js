@@ -83,4 +83,9 @@ $(document).ready(function () {
       },
     });
   });
+
+  /*=== Phone Number Mask ===*/
+  $(document).ready(function () {
+    $(".phone_with_ddd").mask("+0(000) 000-00-00");
+  });
 });
