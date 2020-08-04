@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
 
@@ -147,11 +148,36 @@
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
               <div class="stars">
-                <img src="images/star.svg" alt="Star" />
-                <img src="images/star.svg" alt="Star" />
-                <img src="images/star.svg" alt="Star" />
-                <img src="images/star.svg" alt="Star" />
-                <img src="images/star.svg" alt="Star" />
+                <img
+                  src="images/star.svg"
+                  alt="Star"
+                  data-aos="zoom-out"
+                  data-aos-delay="500"
+                />
+                <img
+                  src="images/star.svg"
+                  alt="Star"
+                  data-aos="zoom-out"
+                  data-aos-delay="400"
+                />
+                <img
+                  src="images/star.svg"
+                  alt="Star"
+                  data-aos="zoom-out"
+                  data-aos-delay="300"
+                />
+                <img
+                  src="images/star.svg"
+                  alt="Star"
+                  data-aos="zoom-out"
+                  data-aos-delay="200"
+                />
+                <img
+                  src="images/star.svg"
+                  alt="Star"
+                  data-aos="zoom-out"
+                  data-aos-delay="100"
+                />
               </div>
               <h1 class="hotel-name hotel-info__name">Grand Hilton Hotel</h1>
               <span class="offer hotel-info__offer">Flash&nbsp;Offer</span>
@@ -289,7 +315,7 @@
 
     <section class="packages">
       <div class="container">
-        <h2 class="packages-title">
+        <h2 class="packages-title" data-aos="fade-right" data-aos-delay="400">
           Other Packages
         </h2>
         <div class="packages-wrapper">
@@ -624,7 +650,11 @@
       data-speed="0.2"
     >
       <div class="newsletter-wrapper">
-        <h2 class="newsletter-title newsletter__title">
+        <h2
+          class="newsletter-title newsletter__title"
+          data-aos="fade-right"
+          data-aos-delay="400"
+        >
           subscribe to our
           <span class="newsletter-title__strong">
             Newsletter
@@ -634,6 +664,8 @@
           action="send.php"
           method="POST"
           class="subscribe newsletter__subscribe form"
+          data-aos="fade-left"
+          data-aos-delay="600"
         >
           <input
             type="email"
@@ -995,11 +1027,15 @@
 
     <section class="activities">
       <div class="container">
-        <h2 class="activities__title">
+        <h2 class="activities__title" data-aos="fade-up" data-aos-delay="300">
           Other Activities
         </h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <img
               src="images/activities/activity-1.jpg"
               alt="The curious corner of chamarel"
@@ -1009,7 +1045,11 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img
               src="images/activities/activity-2.jpg"
               alt="Gymkhana club golf course"
@@ -1019,7 +1059,11 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <img
               src="images/activities/activity-3.jpg"
               alt="Tamarind falls hiking trip - full day"
@@ -1029,7 +1073,11 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
             <img
               src="images/activities/activity-4.jpg"
               alt="The blue marine discovery quest"
@@ -1390,6 +1438,7 @@
 
     <!-- Подключение JS -->
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>

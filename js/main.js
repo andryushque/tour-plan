@@ -87,4 +87,7 @@ $(document).ready(function () {
 
   /*=== Phone Number Mask ===*/
   $(".phone_with_ddd").mask("+7(000) 000-00-0000");
+
+  /*=== Animation On Scroll ===*/
+  AOS.init();
 });
