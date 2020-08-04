@@ -1712,6 +1712,11 @@ template {
   text-decoration: none;
   color: inherit;
   word-break: break-word;
+  cursor: pointer;
+}
+
+.footer__phone {
+  margin: 0;
 }
 
 .footer__text {
