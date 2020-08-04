@@ -679,12 +679,12 @@ template {
 
 .hotel-slider__button--prev {
   left: 18px;
-  background-image: url(../images/arrow-prev-1.svg);
+  background-image: url(../images/icons/arrow-prev-1.svg);
 }
 
 .hotel-slider__button--next {
   right: 18px;
-  background-image: url(../images/arrow-next-1.svg);
+  background-image: url(../images/icons/arrow-next-1.svg);
 }
 
 .hotel-slider__item {
@@ -1378,13 +1378,13 @@ template {
 .reviews-slider__item::before {
   top: 13px;
   left: 62px;
-  background-image: url(../images/quote-left.svg);
+  background-image: url(../images/icons/quote-left.svg);
 }
 
 .reviews-slider__item::after {
   top: 118px;
   right: 62px;
-  background-image: url(../images/quote-right.svg);
+  background-image: url(../images/icons/quote-right.svg);
 }
 
 .reviews-slider__profile {
@@ -1470,12 +1470,12 @@ template {
 
 .reviews-slider__button--prev {
   left: 18px;
-  background-image: url(../images/arrow-prev-2.svg);
+  background-image: url(../images/icons/arrow-prev-2.svg);
 }
 
 .reviews-slider__button--next {
   right: 18px;
-  background-image: url(../images/arrow-next-2.svg);
+  background-image: url(../images/icons/arrow-next-2.svg);
 }
 
 .activities {
