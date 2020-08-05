@@ -1077,8 +1077,20 @@ template {
   padding-bottom: 87px;
 }
 
+.newsletter::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  background-color: rgba(10, 34, 61, 0.8);
+}
+
 .newsletter-wrapper {
   position: relative;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1162,17 +1174,6 @@ template {
 .parallax-window {
   min-height: 260px;
   background: transparent;
-}
-
-.parallax-mirror::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
-  background-color: rgba(10, 34, 61, 0.8);
 }
 
 .reviews {
@@ -2121,7 +2122,7 @@ template {
     align-items: start;
   }
   .modal__info {
-    margin-bottom: 15px;
+    margin-top: 15px;
     order: -1;
   }
 }

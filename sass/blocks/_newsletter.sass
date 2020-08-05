@@ -2,8 +2,18 @@
   position: relative
   padding-top: 98px
   padding-bottom: 87px
+  &::after
+    content: ""
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: 5
+    background-color: rgba($dark, 0.8)
   &-wrapper
     position: relative
+    z-index: 10
     display: flex
     justify-content: space-between
     align-items: center
@@ -66,14 +76,3 @@
 .parallax-window
   min-height: 260px
   background: transparent
-
-.parallax-mirror
-  &::after
-    content: ""
-    position: absolute
-    top: 0
-    bottom: 0
-    left: 0
-    right: 0
-    z-index: 2
-    background-color: rgba($dark, 0.8)
