@@ -12,7 +12,7 @@ $email = $_POST['email'];
 $form = $_POST['form'];
 
 // Формирование самого письма
-if ($form == 'message-form') {
+if ($form == 'message-form' || $form == 'message-form-modal') {
   $title = "Новое обращение Best Tour Plan";
   $body = "
   <h2>Новое письмо</h2>
@@ -65,12 +65,12 @@ else {$result = "error";}
 }
 
 // Отображение результата
-if ($form == 'message-form') {
+/* if ($form == 'message-form') {
   header('Location: message-form.html');
 };
 
 if ($form == 'message-subscribe') {
   header('Location: message-subscribe.html');
-};
+}; */
 
-// echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
