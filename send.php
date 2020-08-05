@@ -65,12 +65,12 @@ else {$result = "error";}
 }
 
 // Отображение результата
-/* if ($form == 'message-form') {
+if ($form == 'message-form' || $form == 'message-form-modal') {
   header('Location: message-form.html');
 };
 
 if ($form == 'message-subscribe') {
   header('Location: message-subscribe.html');
-}; */
+};
 
-echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+// echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
