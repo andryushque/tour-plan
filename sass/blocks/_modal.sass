@@ -19,8 +19,8 @@
     left: 50%
     transform: translate(-50%, -50%)
     width: 478px
-    max-width: 100%
     min-width: 300px
+    max-height: 100vh
     z-index: 101
     padding: 33px 88px
     border-radius: 8px
@@ -29,9 +29,11 @@
     visibility: hidden
     opacity: 0
     transition: opacity 0.2s
+    overflow-y: scroll
     &--visible
       visibility: visible
       opacity: 1
+      overflow-y: scroll
   &__close
     position: absolute
     top: 17px
