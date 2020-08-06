@@ -88,6 +88,15 @@ $(document).ready(function () {
   /*=== Phone Number Mask ===*/
   $(".phone_with_ddd").mask("+7(000) 000-00-0000");
 
+  /*=== Google Map ===*/
+  $(".map").mousemove(initMap);
+  function initMap() {
+    var map = $(".map-google");
+    map.append(
+      '<iframe class= "map-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2699.2640198454924!2d12.418718315609166!3d47.42629497917319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4776529616349b93%3A0xf9cf0bb05dcf89d0!2sGrand%20Tirolia%20Hotel%20Kitzbuhel%2C%20Curio%20Collection%20by%20Hilton!5e0!3m2!1sru!2sru!4v1596634817027!5m2!1sru!2sru" style = "border: 0;" allowfullscreen = "" aria-hidden="false" tabindex = "0"></iframe >'
+    );
+  }
+
   /*=== Animation On Scroll ===*/
   AOS.init();
 });
