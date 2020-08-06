@@ -12,12 +12,23 @@ $email = $_POST['email'];
 $form = $_POST['form'];
 
 // Формирование самого письма
-if ($form == 'message-form' || $form == 'message-form-modal') {
+if ($form == 'message-form') {
   $title = "Новое обращение Best Tour Plan";
   $body = "
   <h2>Новое письмо</h2>
   <b>Имя:</b> $name<br>
   <b>Телефон:</b> $phone<br><br>
+  <b>Сообщение:</b><br>$message
+  ";
+};
+
+if ($form == 'message-form-modal') {
+  $title = "Новое обращение о бронировании Best Tour Plan";
+  $body = "
+  <h2>Новое письмо</h2>
+  <b>Имя:</b> $name<br>
+  <b>Телефон:</b> $phone<br>
+  <b>email:</b> $email<br><br>
   <b>Сообщение:</b><br>$message
   ";
 };
