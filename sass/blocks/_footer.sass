@@ -10,7 +10,7 @@
     grid-auto-rows: minmax(60px, min-content)
     align-items: start
   &__logo
-    width: 166px
+    width: 160px
     align-self: center
     grid-row: 1 / 3
   &__categories
@@ -37,8 +37,10 @@
     padding-left: 60px
   &__contact
     &-details
+      margin-top: 24px
       grid-column: span 2
     &-form
+      margin-top: 24px
       grid-column: span 2
   &__bottom
     grid-column: span 4
@@ -56,6 +58,9 @@
       margin-right: 43px
     &--mb-3
       margin-bottom: 34px
+    &--mb-2
+      margin-bottom: 28px
+      margin-top: 10px
   &__ul
     margin: 0
     padding: 0
@@ -68,10 +73,10 @@
     line-height: 22px
     color: $text-secondary
     word-break: break-word
+    &--mb-1
+      margin-bottom: 15px
     &--mb-2
-      margin-bottom: 22px
-      &:last-child
-        margin-bottom: 0
+      margin-bottom: 20px
   &__link
     text-decoration: none
     color: inherit
@@ -81,7 +86,7 @@
     margin: 0
   &__text
     margin-top: 0
-    margin-bottom: 25px
+    margin-bottom: 22px
     font-weight: normal
     font-size: 14px
     line-height: 22px
@@ -91,6 +96,8 @@
     &-wrapper
       min-width: 40px
       width: 40px
+      padding-left: 4px
+      padding-top: 4px
   &-form
     &__bottom
       display: flex
