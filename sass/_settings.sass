@@ -35,9 +35,20 @@ img
 .message
   padding-top: 10px
   padding-bottom: 50px
+  &__text
+    margin-top: 0
+    margin-bottom: 20px
   &__link
+    display: inline-block
+    border: 1px solid $dark
+    border-radius: 8px
+    padding: 8px 16px
     text-decoration: none
     color: $dark
+    &:hover, &:focus
+      color: $light
+      background-color: $dark
+      transition: background-color 0.3s ease, color 0.3s ease
 
 /*=== Валидация форм ===*/
 label
