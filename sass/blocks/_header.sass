@@ -13,6 +13,9 @@
     margin-left: 108px
   &-bottom
     background-color: $dark
+    &--visible
+      max-height: calc(100% - 78px)
+      overflow-y: auto
   &-menu
     display: flex
     align-items: center
@@ -24,9 +27,8 @@
     font-size: 14px
     line-height: 18px
     color: $light
-    &--landscape
-      width: 100%
-      padding: 0
+    &--mobile
+      max-height: 492px
     &__item
       margin-right: 10px
       &:last-child
@@ -39,6 +41,9 @@
       text-decoration: none
       text-transform: uppercase
       word-break: break-word
+  &--mobile
+    &--fixed
+      max-height: 100%
 
 .logo
   width: 177px
