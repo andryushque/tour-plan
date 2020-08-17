@@ -1,11 +1,15 @@
-# Tour Plan
+## Tour Plan
 
-Учебный проект для практики на курсе Веб Старт от Glo Academy. Автор курса — Артем Исламов.
+### Information
 
-### Проект выполняет
+Best Tour Plan - website for hotel booking.
 
-Устинов Андрей. Девятый поток курса Веб Старт. Тариф "Полный фарш" с куратором.
+### Tech stack
 
-### Куратор
+HTML5, CSS3 / SASS, JavaScript / jQuery
 
-Виталий Моренко
+### Links to website
+
+[https://andrey-ustinov.ru/tour-plan/](https://andrey-ustinov.ru/tour-plan/)
+
+[https://andryushque.github.io/tour-plan/](https://andryushque.github.io/tour-plan/)
